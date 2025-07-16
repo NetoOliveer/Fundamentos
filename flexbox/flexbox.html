@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+
+
+    <!-- flex-wrap  |   justify-content  --  align-items -- align-content    |     Axis - cross    |     Basis       |     order -- align-self   -->
+
+    <!-- content -> horizontal     |     items -> vertical --> 
+
+    <style>
+        .flexbox{
+            height: 250px;
+            border: 3px solid red;
+            display: flex; 
+            margin-bottom: 16px;
+        }
+
+
+        .flexbox div{
+            border: 2px solid orange;
+            width: 100px;
+            margin: 15px;
+        }
+
+        .flex-container1{
+            /* flex-wrap: nowrap;
+            flex-direction: column-reverse; */
+            flex-flow: column wrap ;    /* 1º direção  |   2º wrap   */
+            margin-bottom: 50px;
+        }
+    
+        .flex-container2{
+            justify-content: space-evenly ;
+            margin-bottom: 50px;
+        }
+
+        .flex-container2 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container3{
+            /* flex-direction: column; */
+            justify-content: space-between ;
+            align-items: baseline;
+            margin-bottom: 50px;
+        }
+
+        .flex-container3 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container3 .div2{
+            font-size: 32px;
+        }
+
+        .flex-container4{
+            justify-content: space-between ;
+            align-items: end;
+            margin-bottom: 50px;
+        }
+
+        .flex-container4 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container5{
+            justify-content: space-between ;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .flex-container5 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container6{
+            /* justify-content: space-between ; */
+            /* align-items: center; */
+            margin-bottom: 50px;
+            flex-wrap: wrap; 
+            flex-direction: row;
+            align-content: end;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+
+        .flex-container6 div{
+            width: 50px;
+            /* margin: 0; */
+            height: 50px;
+
+        }
+
+        .flex-container7{
+            justify-content: space-between ;
+            align-items: center;;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .flex-container7 div{
+            margin: 0;
+        }
+
+        .flex-container7 .div2{
+            flex-basis: 250px;
+        }
+
+        .flex-container8{
+            justify-content: space-between ;
+
+            margin-bottom: 50px;
+
+        }
+
+        .flex-container8 .div2{
+            order: 1;
+        }
+
+        .flex-container8 .div3{
+            order: -1;
+        }
+
+        .flex-container9{
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .flex-container9 .div2{
+            order: 2;
+            align-self: center;
+        }
+
+        .flex-container9 .div1{
+            align-self: flex-end;
+        }
+
+        .flex-container9 .div3{
+            align-self: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container4">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container6">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container7">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container8">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+    <div class="flexbox flex-container9">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div> 
+
+</body>
+</html>

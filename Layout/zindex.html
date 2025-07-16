@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>zindex</title>
+
+    <style>
+
+        div{
+            background-color: rgba(198, 198, 198, .5);
+            width: fit-content;
+            padding: 5px 15px 5px 5px;
+            border: 3px solid black;
+            margin-top:5px ;
+            }
+
+        .div2.grup1{
+            /* position: absolute; */
+            background-color: yellow;
+            left: 130px;
+            top: 0;
+
+            z-index: 1;
+        }
+
+        .div2.grup2{
+            /* position: absolute; */
+            left: 50px;
+            top: 60px;
+            background-color: red;
+
+            
+        }
+
+        .div3.grup2{
+            z-index: 2;
+            /* position: absolute; */
+            top: 0;
+            left: 60px;
+            background-color: green;
+        } 
+
+    </style>
+</head>
+<body>
+
+    <div class="div1 grup1">
+        div1 grupo 1
+        <div class="div2 grup1">
+            div2 grupo1
+            <div class="div3 grup1">
+                div3 grupo1
+            </div>
+            <div class="div4 grup1">
+                div4 grupo1
+            </div>
+        </div>
+    </div>
+
+    <div class="div1 grup2">
+        div1 grupo 2
+        <div class="div2 grup2">
+            div2 grupo2
+            <div class="div3 grup2">
+                div3 grupo2
+            </div>
+            <div class="div4 grup2">
+                div4 grupo2
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <a style="padding: 15px; background-color: rgba(93, 212, 173, .5); display: inline-block; border-radius: 30px; color: #000; text-decoration: none; border: 3px solid black;" href="position.html" target="_blank">position</a>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        /* fit-content | min-content | max-content */
+
+        .container{
+            background-color: aquamarine;
+            padding: 10px;
+            width: 80%;
+            margin: 0 auto 150px auto;
+        }
+
+        .container .item{
+            background-color: pink;
+            width: 500px;
+            margin-bottom: 15px;
+        }
+
+        .container .fit-content{
+         width: fit-content;
+        }
+
+        .container .min-content{
+            width: min-content;
+        }
+
+        .container .max-content{
+            width: max-content;
+        }
+
+            .texto{
+                background-color: rebeccapurple;
+                margin-bottom: 10px;
+                width: max-content;
+            }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item fit-content">lorem</div>
+
+        <div class="item min-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi, laudantium inventore dolore rem suscipit!</div>
+
+        <div class="item max-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et non quidem aliquam iure quas dolores numquam ipsum maiores, minus reiciendis nam unde, aspernatur, magni pariatur quisquam provident praesentium laborum eligendi id rerum. Sunt aliquid corrupti delectus reiciendis, odio quisquam quasi pariatur excepturi mollitia commodi nobis ex sapiente quam? Veritatis et, iusto illo saepe fuga aut? Repellat voluptate natus quidem non quibusdam esse vitae eaque earum rem deleniti omnis accusantium, obcaecati dolores sint consequatur sit dicta!</div>
+
+        <div class="texto">texto</div>
+        <div class="texto"> Lorem ipsum dolor sit.</div>
+        <div class="texto">Lorem, ipsum.</div>
+        <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas impedit atque commodi rem voluptatibus provident, eligendi officia cumque voluptatem.</div>
+    </div>
+
+</body>
+</html>
